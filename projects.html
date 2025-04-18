@@ -1,34 +1,178 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - Soheil Hooshmand</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Soheil Hooshmand</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #1e1e1e;;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid white;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #e0e0e0;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .project-card ul {
+      padding-left: 20px;
+      margin-top: 0;
+    }
+
+    .project-card p {
+      margin: 8px 0;
+      color: #333;
+    }
+
+    .project-card a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2f2f2f;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="profile.jpeg" alt="Soheil Hooshmand" class="profile-pic" />
-        <h1>My Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </header>
-    <main>
-        <section class="projects">
-            <h2>Recent Projects</h2>
-            <ul>
-                <li><strong>Portfolio Website:</strong> A responsive portfolio built with HTML, CSS, and JavaScript.</li>
-                <li><strong>Weather App:</strong> A web application using a public API to display real-time weather.</li>
-                <li><strong>To-Do List:</strong> Simple CRUD task manager with local storage.</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Soheil Hooshmand</p>
-    </footer>
+
+  <header>
+    <img src="profile.jpeg" alt="Soheil Hooshmand" class="profile-pic"/>
+    <h1>My Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Detailed Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Self Projects</h3>
+        <p><strong>Image Search Engine</strong></p>
+        <p>Jun 2024 - Jul 2024</p>
+        <p>This is a search engine that takes user query and returns the most similar picture to that query.</p>
+        <p><strong>Skills:</strong> Django · Python · MySQL · REST APIs</p>
+        <p><a href="https://github.com/SoheilHooshmand/WebProjectExploreRestFramework">GitHub Repository</a></p>
+      </div>
+
+      <div class="project-card">
+        <h3>University Projects</h3>
+        <p><strong>Bank Database</strong></p>
+        <p>Apr 2024 - Apr 2024</p>
+        <p>Clients and employees can record transactions as events done at specific times using event-driven architecture.</p>
+        <p><strong>Skills:</strong> Python · MySQL</p>
+        <p><a href="https://github.com/SoheilHooshmand/BankDatabase">GitHub Repository</a></p>
+      </div>
+
+      <div class="project-card">
+        <h3>Corporate Projects</h3>
+        <p><strong>BaghMoshaver</strong></p>
+        <p>Mar 2024 - Present</p>
+        <ul>
+          <li>Android app for farmers' schedule management</li>
+          <li>Backend with Django REST API & MySQL</li>
+        </ul>
+        <p><strong>Skills:</strong> Django · Python · SQL · REST APIs · Git · OOP</p>
+        <p><strong>Corporate:</strong> Ali Amrolahi</p>
+        <p><a href="https://cafebazaar.ir/app/com.example.bagh_moshaver">Cafe Bazaar Link</a></p>
+      </div>
+
+      <div class="project-card">
+        <h3>Work Projects</h3>
+        <p><strong>Web Project Explore</strong></p>
+        <p>May 2022 - Nov 2022</p>
+        <ul>
+          <li>Features: Share, message, rate, search other projects</li>
+        </ul>
+        <p><strong>Skills:</strong> Django · Python · MySQL · REST APIs</p>
+        <p><a href="https://github.com/SoheilHooshmand/WebProjectExploreRestFramework">GitHub Repository</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Soheil Hooshmand</p>
+  </footer>
+
 </body>
 </html>
